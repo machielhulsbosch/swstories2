@@ -1,0 +1,24 @@
+/*----------------------------------------------------------------------------*\
+    FONT
+    Custom characters
+\*----------------------------------------------------------------------------*/
+
+/*  Variables
+\*----------------------------------------------------------------------------*/
+
+
+
+/*  Component
+\*----------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'itc-serif';
+    src:  url('../font/itc-serif/itc-serif.woff2') format('woff2'),
+          url('../font/itc-serif/itc-serif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: 'itc-serif';
+}

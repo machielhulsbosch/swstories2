@@ -1,0 +1,12 @@
+{
+  "name": "swstories",
+  "version": "1.0.0",
+  "description": "Star Wars Stories",
+  "dependencies": {
+    "modernizr-shim": "latest",
+    "jquery": "^1.11.2"
+  },
+  "devDependencies": {
+    "blocss": "latest"
+  }
+}

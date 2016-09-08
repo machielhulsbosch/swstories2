@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*! blocss-shared v1.0.1 | MIT License | github.com/Blocss */
+
+/*----------------------------------------------------------------------------*\
+    ATOMS.RESET
+    Contains several high-level rulesets which apply a consistent, shared
+    declaration (typically margins) across a number of elements.
+\*----------------------------------------------------------------------------*/
+
+/**
+ * Toplevel HTML element
+ * Assign our `$blocss-base-font-size` & predefine some defaults
+ *
+ * 1. Apply the `$blocss-base-font-size`, `$blocss-line-height-ratio`
+ * 2. Always add the horizontal scrollbar to prevent layout shifting
+ * 3. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ */
+html {
+    font: #{($blocss-base-font-size/16px)*1em}/#{$blocss-line-height-ratio} sans-serif; /* 1 */
+    overflow-y: scroll; /* 2 */
+    min-height: 100%;
+    -moz-osx-font-smoothing: grayscale; /* 3 */
+     -webkit-font-smoothing: antialiased; /* 3 */
+}
+
+
+/**
+ * Applies vertical rhythm to designated elements
+ * As per: http://csswizardry.com/2012/06/single-direction-margin-declarations
+ */
+hgroup,
+.hgroup,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+table,
+fieldset,
+pre,
+hr {
+    @include rem(margin-bottom, $blocss-space);
+}
+
+
+/**
+ * Default indentation value for lists
+ */
+ul,
+ol,
+dd {
+    @include rem(margin-left, $blocss-base-line-height);
+}

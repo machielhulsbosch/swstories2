@@ -1,0 +1,17 @@
+{
+    "name": "blocss-reset",
+    "version": "1.0.0",
+    "homepage": "https://github.com/Blocss/atoms.reset",
+    "authors": [
+        "Bram Smulders <bram@bramsmulders.com>"
+    ],
+    "description": "A thin layer on top of normalize.css that provides a starting point more suitable for web applications.",
+    "main": "_atoms.reset.scss",
+    "keywords": [
+        "blocss",
+        "oocss",
+        "atomic design",
+        "css"
+    ],
+    "license": "MIT"
+}

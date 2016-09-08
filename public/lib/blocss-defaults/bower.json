@@ -1,0 +1,17 @@
+{
+    "name": "blocss-defaults",
+    "version": "1.0.3",
+    "homepage": "https://github.com/Blocss/settings.defaults",
+    "authors": [
+        "Bram Smulders <bram@bramsmulders.com>"
+    ],
+    "description": "The defaults module contains a few variables and settings that are required for using any of the rest of the framework.",
+    "main": "_settings.defaults.scss",
+    "keywords": [
+        "blocss",
+        "oocss",
+        "atomic design",
+        "css"
+    ],
+    "license": "MIT"
+}

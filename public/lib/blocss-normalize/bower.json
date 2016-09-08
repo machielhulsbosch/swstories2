@@ -1,0 +1,19 @@
+{
+    "name": "blocss-normalize",
+    "version": "3.0.3",
+    "homepage": "https://github.com/Blocss/atoms.normalize",
+    "authors": [
+        "Bram Smulders <bram@bramsmulders.com>",
+        "Nicolas Gallagher <nicolasgallagher@gmail.com>"
+    ],
+    "description": "Nicolas Gallagher’s Normalize.css used in the Blocss CSS framework",
+    "main": "_atoms.normalize.scss",
+    "keywords": [
+        "blocss",
+        "oocss",
+        "atomic design",
+        "css",
+        "normalize"
+    ],
+    "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+    "name": "blocss-extends",
+    "version": "1.0.0",
+    "homepage": "https://github.com/Blocss/tools.extends",
+    "authors": [
+        "Bram Smulders <bram@bramsmulders.com>"
+    ],
+    "description": "A couple of default extendable classes",
+    "main": "_tools.extends.scss",
+    "keywords": [
+        "blocss",
+        "oocss",
+        "atomic design",
+        "css"
+    ],
+    "license": "MIT"
+}
