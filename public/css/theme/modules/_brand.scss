@@ -1,0 +1,93 @@
+/*----------------------------------------------------------------------------*\
+    Brand
+    Logo & identity
+\*----------------------------------------------------------------------------*/
+
+/*  Variables & animations
+\*----------------------------------------------------------------------------*/
+
+    $logo-placeholder-size: 50px;
+    $logo-placeholder-size-desk: 100px;
+
+    @keyframes static {
+        0% {
+            background-position-y: 2.4em, 0;
+        }
+        24% {
+            transform: none;
+        }
+        25% {
+            transform: skewX(-45deg);
+        }
+        26% {
+            transform: none;
+        }
+        73% {
+            opacity: 1;
+        }
+        74% {
+            opacity: .25;
+        }
+        75% {
+            opacity: 1;
+        }
+        76% {
+            opacity: .5;
+        }
+        77% {
+            opacity: 1;
+        }
+        100% {
+            background-position-y: 0, .5em;
+        }
+    }
+
+
+
+/*  Component
+\*----------------------------------------------------------------------------*/
+
+    .logo{
+        line-height: 1em;
+        text-align: center;
+        text-transform: uppercase;
+        background:
+            linear-gradient(
+                transparent 0,
+                #FFFFFF .1em,
+                transparent .2em
+            ) no-repeat 2.4em 0,
+            repeating-linear-gradient(
+                transparent 0,
+                #FFFFFF .05em,
+                transparent .1em
+            ) repeat-y 0 0
+        ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow:
+            0 0 .1em rgba(#0099FF, .5),
+            0 0 .5em #0099FF;
+        animation: static 5s linear infinite;
+
+        span{
+            display: block;
+            font-size: 1.425em;
+        }
+    }
+
+    .logo--placeholder{
+        font-size: $logo-placeholder-size;
+    }
+
+
+
+/*  Media queries
+\*----------------------------------------------------------------------------*/
+
+    @include media-query(desk){
+
+        .logo--placeholder{
+            font-size: $logo-placeholder-size-desk;
+        }
+    }
